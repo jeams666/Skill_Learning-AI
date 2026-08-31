@@ -1,0 +1,139 @@
+schema_version: 1
+
+study:
+  title: null
+  status: active # active | blocked | complete
+  coaching_depth: null # guided | standard | challenge
+  current_stage: scope # scope | repository_map | inference | training | reconstruction | parameters | modification | transfer | mastery
+  started_at: null
+  updated_at: null
+
+stage_progress:
+  scope:
+    status: in_progress # not_started | in_progress | passed | blocked
+    exit_evidence: []
+  repository_map:
+    status: not_started
+    exit_evidence: []
+  inference:
+    status: not_started
+    exit_evidence: []
+  training:
+    status: not_started
+    exit_evidence: []
+  reconstruction:
+    status: not_started
+    exit_evidence: []
+  parameters:
+    status: not_started
+    exit_evidence: []
+  modification:
+    status: not_started
+    exit_evidence: []
+  transfer:
+    status: not_started
+    exit_evidence: []
+  mastery:
+    status: not_started
+    exit_evidence: []
+
+repository:
+  official:
+    location: null
+    commit: null
+    dirty_worktree_observed: null
+  comparison:
+    location: null
+    commit: null
+    evidence_role: explanation_only
+  target_model: null
+  target_config: null
+
+environment:
+  operating_system: null
+  python_version: null
+  framework_version: null
+  device: null
+  dependency_state: unknown
+  execution_constraints: []
+
+learner:
+  basic_python_confirmed: false
+  command_line_confirmed: false
+  selected_transfer_track: null
+  concrete_task: null
+  available_time: null
+
+source_map:
+  construction: []
+  forward_path: []
+  loss_path: []
+  output_or_postprocess: []
+  configuration_flow: []
+
+evidence:
+  runtime_verified: []
+  source_confirmed: [] # each item includes claim and repo@commit:path:start-end anchor
+  source_anchor_exceptions: [] # each item includes claim, reason, unresolved path+lines or symbol anchor, and distinctive expression
+  docs_stated: []
+  inferred: []
+
+labs:
+  minimal_inference:
+    status: not_started
+    evidence: []
+  minimal_training:
+    status: not_started
+    evidence: []
+  parameter_experiment:
+    status: not_started
+    evidence: []
+  architecture_modification:
+    status: not_started
+    learner_authored_first_patch: false
+    core_module_replaced: false
+    original_module_anchor: null
+    replacement_module_anchor: null
+    excluded_change_check: null # confirms the edit is not loss/config/adapter/wrapper/training-hook-only
+    tensor_contract_before: null
+    tensor_contract_after: null
+    forward_backward_regression_verified: false
+    evidence: []
+  task_transfer:
+    status: not_started
+    evidence: []
+
+mastery_gates:
+  navigation:
+    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    evidence: []
+  tensor_flow:
+    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    evidence: []
+  parameter_causality:
+    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    evidence: []
+  diagnosis:
+    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    evidence: []
+  modification:
+    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    evidence: []
+  transfer:
+    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    evidence: []
+
+completion:
+  all_six_gates_score_3: false
+  core_module_replacement_verified: false
+  transfer_plan_defended: false
+  completion_decision_evidence: []
+
+misconceptions: []
+open_questions: []
+
+session_checkpoint:
+  learner_explanation: null
+  acquired_evidence: []
+  unfinished_experiment: null
+  next_action: null
