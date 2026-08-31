@@ -1,0 +1,7 @@
+interface:
+  display_name: "Learn AI Architectures From Source"
+  short_description: "Source-led AI architecture learning coach"
+  default_prompt: "Use $learning-ai-architectures-from-source to guide me through learning this AI repository by tracing, running, modifying, and testing it myself."
+policy:
+  allow_implicit_invocation: true
+
