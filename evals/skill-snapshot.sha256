@@ -1,0 +1,13 @@
+# Snapshot ID is SHA-256 over the UTF-8 manifest lines below, joined with LF and terminated by LF.
+# snapshot_sha256=089592b114ef2013f88df79c0e526fcff706e066898d5fd14ad29ea64e9ceab7
+895a9217c756d67e39aa9e964b62ecc53cb235ab0bf7771dd2eb234649d05f5d  skills/learning-ai-architectures-from-source/agents/openai.yaml
+5ae159dfa944a5c0c74efdf78a91ba1a34cf58a9a6355ff67bc8f32248427abb  skills/learning-ai-architectures-from-source/assets/experiment-log-template.md
+159cea46be2c61a7f656535a3d96bab1ba170d0c15a9acd37533437fa2057488  skills/learning-ai-architectures-from-source/assets/parameter-ledger-template.md
+cf01308c1b2e3cbf175a7b8ed8144aa716ea70a80567450855907e0c1aab451b  skills/learning-ai-architectures-from-source/assets/study-state-template.yaml
+c0f79d326a7553c9fd2cd4efe1fa95a05bc2ebed16c38dfcb7dd2d745f9bd374  skills/learning-ai-architectures-from-source/references/architecture-families.md
+21549f19e9e943b80dc6585411b17cd570696931822c2d2ec8318bf656d959fb  skills/learning-ai-architectures-from-source/references/learner-led-labs.md
+e6daed37ddf8957f85b3fe7db0a326dea9c2bc81c7a70af0bef45e2ff6cb4354  skills/learning-ai-architectures-from-source/references/repository-investigation.md
+2b9cfd94fb3a879053c67e6f89fbc9eccdfa5e0980634f8eb647dd985df7ba39  skills/learning-ai-architectures-from-source/references/socratic-assessment.md
+f5e7ffc8eb17b50351538db0d1e17c2c6ae8bae364d63232a148709aa107ddd9  skills/learning-ai-architectures-from-source/references/source-annotation.md
+ecf05cfad2d69805997fa01db68d075ebfa57411834066c47c447d1f8668264d  skills/learning-ai-architectures-from-source/references/task-transfer.md
+80c7d518946e6338a937aa5dd6f92f0f90358475d627b3878dea18e9de08bd8b  skills/learning-ai-architectures-from-source/SKILL.md
