@@ -1,0 +1,5 @@
+width: 32
+neck_depth: 2
+num_classes: 5
+input_size: 256
+
