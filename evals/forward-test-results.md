@@ -51,4 +51,3 @@ The printed `toy_plumbing_only...` labels are an evidence boundary: finite tenso
 ## Interpretation boundary
 
 This exploratory audit tests first-turn teaching behavior across six adversarial scenarios on three tiny PyTorch repositories. It does not establish multi-session retention, population-level learning outcomes, response reliability, support for every architecture repository, or downstream model-quality improvements. A reliability claim requires at least three fresh contexts per scenario, all completed responses reported, and no adaptive selection hidden from the result.
-
