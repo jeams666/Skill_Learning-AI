@@ -1,12 +1,22 @@
-schema_version: 1
+schema_version: 2
 
 study:
   title: null
   status: active # active | blocked | complete
-  coaching_depth: null # guided | standard | challenge
+  learning_route: pending_calibration # pending_calibration | guided | standard | accelerated
   current_stage: scope # scope | repository_map | inference | training | reconstruction | parameters | modification | transfer | mastery
   started_at: null
   updated_at: null
+
+preflight:
+  source_access: not_attempted # not_attempted | succeeded | failed
+  files_read: []
+  config_anchor: null
+  construction_anchor: null
+  forward_anchor: null
+  wrapper_anchor: null
+  source_confirmed_absences: []
+  failure_evidence: null # exact path and read error; required only when source_access is failed
 
 stage_progress:
   scope:
@@ -63,6 +73,25 @@ learner:
   selected_transfer_track: null
   concrete_task: null
   available_time: null
+  calibration:
+    challenge: null
+    observed_navigation: null
+    observed_tensor_reasoning: null
+    observed_causal_reasoning: null
+    independent_successes: 0
+    highest_hint_level: null
+    route_reason: null
+  route_history: [] # global route changes; each item records from, to, evidence, reason, and timestamp
+  scoped_remediation: [] # each item records topic/stage, temporary_route, trigger_evidence, exit_condition, and status
+
+rapid_mental_model:
+  status: not_started # not_started | draft | verified | revised
+  execution_spine: []
+  architecture_skeleton: []
+  unresolved_edges: []
+  learner_summary: null
+  evidence: []
+  legacy_evidence_preserved: [] # migrated v1 architecture-map/teach-back evidence; not proof of this v2 model
 
 source_map:
   construction: []
@@ -105,22 +134,22 @@ labs:
 
 mastery_gates:
   navigation:
-    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    score: not_assessed # not_assessed | 0 | 1 | 2 | 3; only 3 passes
     evidence: []
   tensor_flow:
-    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    score: not_assessed # not_assessed | 0 | 1 | 2 | 3; only 3 passes
     evidence: []
   parameter_causality:
-    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    score: not_assessed # not_assessed | 0 | 1 | 2 | 3; only 3 passes
     evidence: []
   diagnosis:
-    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    score: not_assessed # not_assessed | 0 | 1 | 2 | 3; only 3 passes
     evidence: []
   modification:
-    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    score: not_assessed # not_assessed | 0 | 1 | 2 | 3; only 3 passes
     evidence: []
   transfer:
-    score: null # null | 0 | 1 | 2 | 3; only 3 passes
+    score: not_assessed # not_assessed | 0 | 1 | 2 | 3; only 3 passes
     evidence: []
 
 completion:
@@ -137,3 +166,4 @@ session_checkpoint:
   acquired_evidence: []
   unfinished_experiment: null
   next_action: null
+
