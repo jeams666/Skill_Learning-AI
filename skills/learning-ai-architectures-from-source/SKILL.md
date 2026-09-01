@@ -94,4 +94,3 @@ Use [parameter-ledger-template.md](assets/parameter-ledger-template.md) and [exp
 ## Completion gate
 
 Set `status: complete` only after all six mastery gates score 3 and the learner independently replaces an architecture-bearing core module on the active execution path, preserves and verifies its documented input/output tensor contract with forward, backward, and regression evidence, teaches back the tradeoffs, and defends one real-task transfer plan. Loss-only, config-only, adapter-only, wrapper-only, and training-hook-only edits cannot pass the modification gate. A failed gate or incomplete stage retains `active` or `blocked` status and routes to targeted remediation plus a new test.
-
