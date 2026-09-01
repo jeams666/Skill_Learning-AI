@@ -4,20 +4,20 @@ Read this reference for learner calibration, mastery questions, remediation, and
 
 ## Calibration
 
-Do not infer skill from job title, confidence, or a list of completed courses. Use two or three small observable tasks drawn from the current repository:
+Do not infer skill from job title, confidence, or a list of completed courses. Read [learner-routing.md](learner-routing.md), then use one compact challenge drawn from the current repository that samples two or three of these observable abilities:
 
 - navigate from a config key to its use site;
 - predict a tensor shape through one operation;
 - explain a forward/backward or train/eval distinction;
 - identify the cause of a controlled error.
 
-Select a coaching depth:
+Assign a provisional learning route:
 
 - Guided: smaller actions, explicit framework explanations, early hints.
 - Standard: source-chain and causal-experiment emphasis.
-- Challenge: fewer hints, more counterfactuals, design, and diagnosis.
+- Accelerated: integrated evidence, fewer hints, more counterfactuals, design, and diagnosis.
 
-The same graduation gates apply to every depth.
+Record the observed calibration evidence and route reason. The same graduation gates apply to every route; only the density of evidence per action changes. Route changes are local and evidence-driven: remediate a weak concept without discarding competence already demonstrated elsewhere.
 
 ## Question ladder
 
@@ -65,7 +65,7 @@ Record a stage as `passed` only after its exit evidence exists:
 8. transfer — defended real-task adaptation and evaluation plan;
 9. mastery — every gate below scores 3.
 
-Do not skip an incomplete or blocked stage. Only the mastery exit may set study `status: complete`.
+Do not skip an incomplete or blocked stage. On the accelerated route, one learner artifact may provide evidence for multiple adjacent stages, but score each stage against its own exit list and leave missing evidence incomplete. Only the mastery exit may set study `status: complete`.
 
 ## Mastery gates
 
@@ -94,4 +94,5 @@ Under deadline pressure, reduce the scope to one high-information action and sav
 
 ## Resumable checkpoint
 
-End a session with current stage, evidence acquired, learner explanation, passed gates, misconceptions, unfinished experiment, and exactly one next action. Never infer completion merely because the conversation ended.
+End a session with current learning route and calibration evidence, rapid-mental-model status, current stage, evidence acquired, learner explanation, passed gates, misconceptions, unfinished experiment, and exactly one next action. Never infer completion merely because the conversation ended.
+
