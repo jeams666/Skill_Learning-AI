@@ -62,4 +62,3 @@ Files read:
 - Asked for decoder, cache, and grouping operations that the small fixture may not contain.
 
 The resulting refactor adds a new-study preflight, requires `pending_calibration`, and requires at least one source-confirmed boundary in each mental-model layer.
-
