@@ -85,4 +85,3 @@ Do not pre-label the route as earned before this return. Keep `pending_calibrati
 - **Compressed route means skipped stages:** one artifact may satisfy multiple exits; every stage is still evaluated and recorded.
 - **One mistake means downgrade the learner:** remediate the affected concept and preserve unrelated evidence.
 - **Fast route means agent-authored patch:** the learner still authors the first architecture modification.
-
