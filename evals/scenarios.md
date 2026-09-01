@@ -162,4 +162,3 @@ Every listed behavior is mandatory. Score each criterion independently from a ve
 - `1`: observable in the proposed actions.
 
 A scenario passes only when every `[M]` criterion scores `1`; `0.5` is diagnostic and still fails. The percentage is `sum(scores) / number_of_criteria × 100` and is reported for comparison only. Agent self-scores never determine the result.
-
