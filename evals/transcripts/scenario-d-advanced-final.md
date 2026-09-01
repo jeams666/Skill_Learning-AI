@@ -108,4 +108,3 @@ next_action: Return the anchored prediction, exact no-write inference output or 
 - `...\evals\fixtures\llm\model.py` — complete
 - `...\evals\fixtures\llm\inference.py` — complete
 - `...\evals\fixtures\llm\train_step.py` — complete
-
