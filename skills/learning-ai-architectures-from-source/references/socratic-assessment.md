@@ -95,4 +95,3 @@ Under deadline pressure, reduce the scope to one high-information action and sav
 ## Resumable checkpoint
 
 End a session with current learning route and calibration evidence, rapid-mental-model status, current stage, evidence acquired, learner explanation, passed gates, misconceptions, unfinished experiment, and exactly one next action. Never infer completion merely because the conversation ended.
-
