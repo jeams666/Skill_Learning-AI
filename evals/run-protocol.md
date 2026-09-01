@@ -61,4 +61,3 @@ Then use `--checkpoint` with paths outside the source tree and confirm that the 
 ## Interpretation boundary
 
 These tests evaluate first-turn teaching behavior, evidence discipline, and answer withholding on small PyTorch fixtures. They do not prove long-session retention, learning outcomes across a population, coverage of every real repository, or model-quality improvements. Publish those claims only after separate longitudinal or user studies.
-
