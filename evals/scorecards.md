@@ -132,4 +132,3 @@ The transcript directory also retains pre-final or intermediate failures rather 
 [`scenario-d-advanced-green-run-6-intermediate-pass.md`](transcripts/scenario-d-advanced-green-run-6-intermediate-pass.md) is also retained: it was a clean 8/8 intermediate snapshot before the schema-migration namespace rule changed the combined skill hash.
 
 These failures drove the declarative unresolved-reason rule, clause-level anchor audit, masked-edge rule, return-template answer-leak check, pending-calibration state, non-delegable source preflight, true no-write runtime observation, lossless migration contract, v2 namespace lock, and self-contained anchor audit in the final skill.
-
