@@ -7,6 +7,7 @@ A learner-led, source-first Agent Skill for understanding unfamiliar PyTorch AI 
 - [Overview](#overview)
 - [What You Will Learn](#what-you-will-learn)
 - [How It Works](#how-it-works)
+- [Learning Methodology](#learning-methodology)
 - [Learning Routes](#learning-routes)
 - [Supported Architecture Families](#supported-architecture-families)
 - [Prerequisites](#prerequisites)
@@ -64,6 +65,29 @@ The skill first builds a two-layer mental model:
 Important claims are labeled as `[source-confirmed]`, `[runtime-verified]`, `[docs-stated]`, or `[inferred]`. Source-confirmed architecture claims use repository, commit, path, and line anchors so the learner can inspect the exact implementation rather than trusting a detached explanation.
 
 Progress is saved in a resumable checkpoint containing stage status, evidence, misconceptions, open questions, six mastery-gate scores, and exactly one next action.
+
+## Learning Methodology
+
+This Skill is built around a **Harness Engineering** approach to learning. The AI assistant is only one component of the learning system; reliable progress also depends on the surrounding harness: pinned source code, repository-navigation tools, executable environments, bounded experiments, tensor-contract checks, evidence labels, saved state, evaluation gates, and feedback loops. The harness turns an open-ended request to “understand this architecture” into a sequence of observable, reproducible learning outcomes.
+
+Four design principles work together inside that harness:
+
+| Method | How the Skill applies it | Evidence produced by the learner |
+| --- | --- | --- |
+| **Harness Engineering** | Organizes source access, tools, runtime environments, checkpoints, experiments, and mastery gates around the learner and the target repository | Reproducible source traces, captured command output, experiment records, tensor-contract checks, and resumable state |
+| **First-Principles Reasoning** | Reduces an architecture to the problem it solves, its inputs and outputs, data transformations, state, objectives, constraints, and invariants before relying on paper terminology or repository naming | Derived tensor shapes, parameter couplings, causal predictions, and explanations of why each mechanism must exist |
+| **Socratic Questioning** | Uses predictions, counterfactuals, diagnosis questions, and teach-back before revealing answers; hints become more specific only when the learner's evidence shows a real blockage | Independent explanations, corrected misconceptions, defended design choices, and answers grounded in source or runtime evidence |
+| **Project-Driven Learning** | Selects a real transfer destination during scope and uses it to prioritize what the learner traces, tests, modifies, and evaluates without prematurely supplying the final solution | A learner-authored core-module change, project-relevant experiments, evaluation results, failure analysis, and a defended transfer plan |
+
+The combined loop is:
+
+```text
+real project → source trace → first-principles model → Socratic prediction
+             → minimal experiment → evidence → architecture change
+             → project evaluation → reflection and next checkpoint
+```
+
+Project-driven learning is therefore a first-class path through the Skill, not an optional exercise at the end. A learner may start from industrial detection, visual retrieval, multimodal adaptation, or local LLM fine-tuning; the chosen project supplies context and priorities throughout the study, while the same evidence and mastery standards prevent “finishing the demo” from being mistaken for understanding the architecture.
 
 ## Learning Routes
 
