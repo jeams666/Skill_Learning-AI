@@ -100,4 +100,3 @@ This establishes that the old skill already changes hint depth, but it does not 
 Date: 2026-08-31. In an unscored `DEVELOPMENT PROBE`, a pre-migration-contract candidate resumed Scenario E without resetting stage or gate evidence, but emitted `schema_version: 1` while retaining `coaching_depth: challenge` and adding `learning_route: accelerated`. This created two route authorities and omitted route-history and scoped-remediation initialization. The exact candidate snapshot was not recorded, so the compact artifact is diagnostic rather than a reproducible baseline: [`scenario-e-schema-v1-current.md`](transcripts/scenario-e-schema-v1-current.md).
 
 The migration upgrade must therefore define a lossless field transformation, not only a value rename.
-
