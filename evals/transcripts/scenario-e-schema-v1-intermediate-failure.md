@@ -68,4 +68,3 @@ session_checkpoint:
 ```
 
 Files read: `SKILL.md`; `learner-routing.md`; `repository-investigation.md`; `source-annotation.md`; `learner-led-labs.md`; `socratic-assessment.md`; the matching Transformer/local-LLM section of `architecture-families.md`; `study-state-template.yaml`; `parameter-ledger-template.md`; `experiment-log-template.md`; fixture `config.py`, `model.py`, `inference.py`, and `train_step.py`.
-
