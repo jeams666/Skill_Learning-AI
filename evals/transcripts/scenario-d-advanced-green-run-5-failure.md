@@ -93,4 +93,3 @@ Files read: `SKILL.md`; `learner-routing.md`; `repository-investigation.md`; `so
 ## Why it failed
 
 The response retained prediction, learner-authored modification, and transfer defense, but its calibration action did not require an actual runtime observation or exact run error. Scenario D therefore scored 0.5 on the runtime-evidence requirement.
-
