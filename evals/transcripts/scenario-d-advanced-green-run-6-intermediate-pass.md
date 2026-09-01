@@ -81,4 +81,3 @@ checkpoint:
 ```
 
 Files read: `SKILL.md`; `learner-routing.md`; `repository-investigation.md`; `socratic-assessment.md`; `learner-led-labs.md`; `source-annotation.md`; the shared contract and Local LLM fine-tuning section of `task-transfer.md`; the Transformer and local LLM section of `architecture-families.md`; fixture `config.py`, `model.py`, `inference.py`, and `train_step.py`.
-
