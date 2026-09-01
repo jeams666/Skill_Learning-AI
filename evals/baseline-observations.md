@@ -71,3 +71,33 @@ Exact rationalization from the baseline self-report:
 5. Source claims require anchors and evidence labels; general advice must be marked as such.
 6. Modification requires prediction, learner-authored first patch, execution evidence, teach-back, and a resumable checkpoint.
 7. A derivation or patch shown before the learner attempt cannot be recycled as a mastery question; the target answer must remain withheld.
+
+## Experienced-learner routing baseline
+
+Date: 2026-08-31. In an `UPGRADE BASELINE` run, a fresh agent loaded the previous released skill and handled Scenario D from [`scenarios.md`](scenarios.md). The raw response is retained in [`scenario-d-advanced-current.md`](transcripts/scenario-d-advanced-current.md).
+
+Observed strengths:
+
+- Chose terse challenge-depth coaching instead of beginner exposition.
+- Kept seniority separate from mastery evidence.
+- Produced an execution-oriented boundary map and one source/tensor challenge.
+
+Observed upgrade gaps:
+
+- Did not record an explicit learning route, the calibration evidence behind it, or route-change conditions.
+- Did not distinguish an architecture skeleton from the execution spine, so the requested fast mental model remained incomplete.
+- Did not explain how one advanced challenge may collect evidence for several adjacent stages while preserving every stage's exit gate.
+- Did not persist mental-model or calibration state in the checkpoint.
+
+Representative wording:
+
+> "Challenge-depth start. Your PyTorch background and 90-minute deadline make the coaching terse; they do not replace source evidence."
+
+This establishes that the old skill already changes hint depth, but it does not operationalize learner routing or rapid orientation across the staged learning loop.
+
+## Schema-v1 resume baseline
+
+Date: 2026-08-31. In an unscored `DEVELOPMENT PROBE`, a pre-migration-contract candidate resumed Scenario E without resetting stage or gate evidence, but emitted `schema_version: 1` while retaining `coaching_depth: challenge` and adding `learning_route: accelerated`. This created two route authorities and omitted route-history and scoped-remediation initialization. The exact candidate snapshot was not recorded, so the compact artifact is diagnostic rather than a reproducible baseline: [`scenario-e-schema-v1-current.md`](transcripts/scenario-e-schema-v1-current.md).
+
+The migration upgrade must therefore define a lossless field transformation, not only a value rename.
+
