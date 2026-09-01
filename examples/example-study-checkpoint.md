@@ -8,7 +8,15 @@ This is an illustrative checkpoint built from the included miniature grouped-att
 - Source snapshot: `fixture@unresolved`; this portable example does not embed the enclosing Git commit, so it must be replaced with the learner's actual pinned revision when used.
 - Target: `evals/fixtures/llm/model.py` with `config.py`.
 - Transfer track: local LLM fine-tuning.
-- Coaching depth: standard.
+- Learning route: standard, provisionally assigned from a correct config-to-constructor trace plus a partially prompted tensor derivation.
+- Preflight: `source_access=succeeded`; inspected `config.py`, `model.py`, `inference.py`, and `train_step.py`, with config/construction/forward/wrapper boundaries recorded below.
+
+## Rapid mental model
+
+- Status: `draft`.
+- Execution spine: `MODEL_CONFIG → build_model() → GroupedAttention.forward() → q/k/v shape report`; the fixture's toy training branch adds synthetic loss → backward → optimizer step.
+- Architecture skeleton: hidden-state representation → grouped Q/K/V projections and reshape → unresolved full-attention interaction → unresolved decoder/task output.
+- Unresolved learner edge: this fixture stops at Q/K/V projection and reshape, so the learner must distinguish what the local source implements from a complete attention or decoder path.
 
 ## Evidence acquired
 
@@ -39,3 +47,4 @@ The learner initially treated a head-count edit as an isolated tuning parameter.
 ## Exactly one next action
 
 Before running code, write the Q, K, and V shapes for batch 2, sequence 16 under the current configuration, then predict the first observable failure after changing only `num_heads` to 6. Return the derivation, not just the final dimensions.
+
