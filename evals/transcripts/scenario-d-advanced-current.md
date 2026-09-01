@@ -82,4 +82,3 @@ Files read: `SKILL.md`; `references/repository-investigation.md`; `references/so
 - The boundary map described execution paths but did not produce a distinct architecture skeleton.
 - The challenge tested navigation and tensor reasoning, but the response did not state which stage exit evidence could be bundled or how stages remain independently gated.
 - The checkpoint had no rapid-mental-model state or calibration evidence field.
-
