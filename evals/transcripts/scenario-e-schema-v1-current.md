@@ -34,4 +34,3 @@ The response's single learner action was a source-grounded counterfactual over `
 - Had no explicit lossless-migration rule covering unknown legacy fields.
 
 Files read: `SKILL.md`; `learner-routing.md`; `socratic-assessment.md`; fixture `config.py`, `inference.py`, `model.py`, and `train_step.py`.
-
