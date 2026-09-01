@@ -60,4 +60,3 @@ Files read:
 - Transformer section of `architecture-families.md`
 - Local LLM fine-tuning section of `task-transfer.md`
 - `config.py`, `model.py`, `inference.py`, `train_step.py`
-
