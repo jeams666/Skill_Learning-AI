@@ -97,4 +97,3 @@ Files read: `SKILL.md`; `learner-routing.md`; `repository-investigation.md`; `so
 ## Why it failed
 
 The response said repository-grounded work could “skip stages.” That contradicts the invariant that evidence may satisfy several independently evaluated exits but never skip a stage. An initial independent audit scored the artifact 8/8, but later code review identified the contradiction; the artifact is retained as a failure and is not final evidence.
-
