@@ -4,4 +4,3 @@ interface:
   default_prompt: "Use $learning-ai-architectures-from-source to calibrate my current ability, build a fast mental model of this AI repository, and route me through tracing, running, modifying, and testing it myself."
 policy:
   allow_implicit_invocation: true
-
