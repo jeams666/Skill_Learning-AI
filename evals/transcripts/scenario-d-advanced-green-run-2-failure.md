@@ -70,4 +70,3 @@ Files read:
 - Produced neither the required anchors nor the two-layer repository model.
 
 The next refactor makes preflight non-delegable, distinguishes `not_attempted` from an actual failed read, and adds an explicit preflight record to the checkpoint schema.
-
