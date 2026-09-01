@@ -47,4 +47,3 @@ The learner initially treated a head-count edit as an isolated tuning parameter.
 ## Exactly one next action
 
 Before running code, write the Q, K, and V shapes for batch 2, sequence 16 under the current configuration, then predict the first observable failure after changing only `num_heads` to 6. Return the derivation, not just the final dimensions.
-
